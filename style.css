@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --black: #121212;
+  --white: #f0f8ff;
+  --destaque: #00a8ff;
+  --green: #00913f;
+  --red: #950606;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+}
+
+body {
+  background-color: var(--white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#form-tarefa {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+#texto-tarefa {
+  padding: 5px;
+}
+
+#botao-tarefa {
+  padding: 10px;
+  background-color: var(--destaque);
+  border: 2px solid var(--destaque);
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+#botao-tarefa:hover {
+  color: var(--destaque);
+  background-color: var(--white);
+}
+
+h1,
+h2 {
+  color: var(--destaque);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+li > span {
+  width: 300px;
+}
+
+.botao-concluir {
+  padding: 10px;
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.botao-excluir {
+  padding: 10px;
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.botao-concluir:hover {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.botao-excluir:hover {
+  background-color: var(--white);
+  color: var(--red);
+}
+
+.concluida {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
